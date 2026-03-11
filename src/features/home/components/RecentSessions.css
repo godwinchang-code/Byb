@@ -1,0 +1,102 @@
+.recent-sessions {
+  width: 100%;
+  max-width: 800px;
+}
+
+.recent-title {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.recent-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.recent-item:hover {
+  background: var(--bg-hover);
+}
+
+.recent-open {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  cursor: pointer;
+  text-align: left;
+  font-size: 12px;
+  min-width: 0;
+}
+
+.recent-type {
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--accent-color);
+  padding: 1px 4px;
+  border: 1px solid var(--accent-color);
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.recent-paths {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
+}
+
+.recent-path {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
+
+.recent-separator {
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.recent-time {
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.recent-remove {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+
+.recent-item:hover .recent-remove {
+  opacity: 1;
+}
+
+.recent-remove:hover {
+  color: #f85149;
+}

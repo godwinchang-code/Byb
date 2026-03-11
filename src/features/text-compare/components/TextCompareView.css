@@ -1,0 +1,49 @@
+.text-compare-view {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.text-compare-editors {
+  flex: 1;
+  overflow: hidden;
+}
+
+.text-compare-loading,
+.text-compare-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  color: var(--text-secondary);
+}
+
+.text-compare-error {
+  color: #f85149;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--border-color);
+  border-top-color: var(--accent-color);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* CodeMirror overrides for our layout */
+.diff-editor .cm-editor {
+  height: 100%;
+}
+
+.diff-editor .cm-scroller {
+  overflow: auto;
+}
